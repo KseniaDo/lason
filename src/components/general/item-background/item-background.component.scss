@@ -1,0 +1,25 @@
+.item-background {
+    &__container {
+        border-radius: 2em;
+        padding: 28px;
+    }
+
+    &__header {
+        padding-top: 64px;
+    }
+
+    &__text {
+        padding-top: 16px;
+    }
+}
+
+.icon-shape_round {
+    width: 68px;
+    height: 68px;
+    border-radius: 100%;
+    background-color: white;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,64 @@
+.list-text-image {
+    border-radius: 2em;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+
+    &_odd {
+        flex-direction: row;
+    }
+
+    &_even {
+        flex-direction: row-reverse;
+
+        & .list-image_up {
+            left: 0;
+        }
+
+        & .list-image_down {
+            left: 20%;
+        }
+    }
+}
+
+.list-text {
+    &__header {
+        width: 60%;
+        font-size: 40px;
+        padding-top: 80px;
+    }
+
+    &__text {
+        width: 70%;
+        padding-top: 20px;
+        padding-bottom: 40px;
+    }
+}
+
+.list-image {
+    position: relative;
+    width: 50%;
+
+    &_up {
+        position: absolute;
+        top: 0;
+        right: 10%;
+    }
+
+    &_down {
+        position: absolute;
+        top: 25%;
+        right: 20%;
+    }
+}
+
+.image_scale {
+    transition: transform ease-in-out 0.3s;
+
+    &:hover {
+        transform: scale(1.2);
+    }
+}

@@ -1,0 +1,71 @@
+@import url(../../styles/normalisation.scss);
+@import url(../../styles/values.scss);
+@import url(../../styles/mixins.scss);
+@import url(../general/button-get-demo/button-get-demo.component.scss);
+
+.banner {
+    width: 100vw;
+    max-width: 100%;
+    padding-bottom: 50px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+
+    background-image: url("/assets/banner/background/img_f/bannerBg@1x.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    background-image: -webkit-image-set(
+        url("/assets/banner/background/img_f/bannerBg@3x.jpg") 3x, 
+        url("/assets/banner/background/img_f/bannerBg@2x.jpg") 2x,
+        url("/assets/banner/background/img_f/bannerBg@1x.jpg") 1x
+    );
+
+    background-image: image-set(
+        url("/assets/banner/background/img_f/bannerBg@3x.jpg") type("image/jpeg") 3x,
+        url("/assets/banner/background/img_f/bannerBg@2x.jpg") type("image/jpeg") 2x,
+        url("/assets/banner/background/img_f/bannerBg@1x.jpg") type("image/jpeg") 1x
+    );
+
+    &__subtitle {
+        padding-top: 28px;
+        padding-bottom: 28px;
+    }
+
+    &__button-container {
+        height: min-content;
+        display: flex;
+        column-gap: 20px;
+    }
+
+    &__button {
+        width: 250px;
+        height: 60px;
+    }
+
+    &__image-container {
+        height: 70vh;
+        max-height: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 20px;
+
+        align-content: flex-end;
+        align-items: flex-end;
+        justify-content: space-between;
+
+        grid-column: 2;
+        grid-row: 1 / 4;
+    }
+
+    &__image {
+        transition: transform ease-in-out 0.3s;
+
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
+}

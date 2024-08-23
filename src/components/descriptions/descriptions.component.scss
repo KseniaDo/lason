@@ -1,0 +1,19 @@
+@import url(../../styles/normalisation.scss);
+@import url(../../styles/values.scss);
+@import url(../../styles/mixins.scss);
+@import url(../general/list-text-image/list-text-image.component.scss);
+
+.descriptions {
+    border-radius: 1em;
+    background-color: #ebf3fe;
+    padding-left: 100px;
+    padding-right: 100px;
+
+    // &:nth-child(odd) {
+    //     flex-direction: row;
+    // }
+
+    // &:nth-child(even) {
+    //     flex-direction: row-reverse;
+    // }
+}

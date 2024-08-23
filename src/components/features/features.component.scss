@@ -1,0 +1,25 @@
+@import url(../../styles/normalisation.scss);
+@import url(../../styles/values.scss);
+@import url(../../styles/mixins.scss);
+
+
+.features {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding-bottom: 50px;
+
+    &__subtitle {
+        width: 50vw;
+        text-align: center;
+
+        padding-top: 28px;
+        padding-bottom: 28px;
+    }
+
+    &__container {
+        display: flex;
+        column-gap: 32px;
+    }
+}

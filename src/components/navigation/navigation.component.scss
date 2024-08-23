@@ -1,0 +1,21 @@
+@import url(../../styles/normalisation.scss);
+@import url(../../styles/values.scss);
+@import url(../../styles/mixins.scss);
+
+.navigation {
+    padding-top: 0;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__account {
+        display: flex;
+        column-gap: 20px;
+    }
+
+    &__button {
+        width: 100px;
+        height: 40px;
+    }
+}

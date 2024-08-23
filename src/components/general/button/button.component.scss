@@ -1,0 +1,35 @@
+.button {
+    display: block;
+    border-radius: 2em;
+    cursor: pointer;
+
+    &_blue {
+        box-shadow: 0 0 0 #3782f9;
+        border: 1px solid #3782f9;
+        background-color: #3782f9;
+        color: white;
+        transition: all ease-in-out 0.3s;
+        
+        &:hover {
+            box-shadow: 0 0 10px #3782f9;
+            background-color: white;
+            color: #3782f9;
+            font-weight: 600;
+        }
+    }
+
+    &_white {
+        box-shadow: 0 0 0 black;
+        border: 1px solid black;
+        background-color: white;
+        color: black;
+        transition: all ease-in-out 0.3s;
+
+        &:hover {
+            box-shadow: 0 0 4px black;
+            background-color: black;
+            color: white;
+            font-weight: 600;
+        }
+    }
+}
